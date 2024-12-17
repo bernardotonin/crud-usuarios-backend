@@ -63,7 +63,7 @@ Este é um projeto de API REST para gerenciamento de usuários, desenvolvido com
     mvn spring-boot:run
     ```
     
-6.  Configurar o front-end do projeto.
+6.  Configurar o [front-end](https://github.com/bernardotonin/crud-usuarios-frontend/) do projeto.
     
 
 ## Estrutura do Projeto

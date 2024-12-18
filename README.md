@@ -1,4 +1,5 @@
 
+
 # CRUD de Usuários com Spring Boot
 
 Este é um projeto de API REST para gerenciamento de usuários, desenvolvido com Spring Boot, MySQL e JPA. Ele inclui operações CRUD para usuários e upload de imagem de perfil.
@@ -34,11 +35,12 @@ Este é um projeto de API REST para gerenciamento de usuários, desenvolvido com
 
 ## Configuração do Ambiente
 
-1.  Clone este repositório:
+### Utilizando InteliJ
+
+1.  Crie um projeto apartir de um VCS:
     
     ```
-    git clone https://github.com/bernardotonin/crud-usuarios-backend.git
-    cd crud-usuarios-backend
+    https://github.com/bernardotonin/crud-usuarios-backend.git
     ```
     
 2.  Configure o arquivo `.env` na raiz do projeto:
@@ -51,16 +53,11 @@ Este é um projeto de API REST para gerenciamento de usuários, desenvolvido com
     
 3.  Certifique-se de que o banco de dados MySQL está rodando.
     
-4.  Configure as dependências:
+
+5.  Execute o método main da classe CrudUsuariosApplication
     
     ```
-    mvn clean install
-    ```
-    
-5.  Execute o projeto:
-    
-    ```
-    mvn spring-boot:run
+    src/main/java/com/desafio/crud_usuarios/CrudUsuariosApplication.java
     ```
     
 6.  Configurar o [front-end](https://github.com/bernardotonin/crud-usuarios-frontend/) do projeto.

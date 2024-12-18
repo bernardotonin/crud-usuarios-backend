@@ -14,7 +14,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query("SELECT COUNT(u) FROM User u WHERE u.isActive = true")
     Long countActiveUsers();
-
-    @Query("SELECT CASE WHEN COUNT(u) >= 5 THEN true ELSE false END FROM User u WHERE u.isActive = true")
-    Boolean existsMoreThanFiveActiveUsers();
 }

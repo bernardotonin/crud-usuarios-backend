@@ -6,7 +6,7 @@ Este é um projeto de API REST para gerenciamento de usuários, desenvolvido com
 
 ## Funcionalidades
 
--   Criação, leitura, atualização e remoção de usuários.
+-   Criação, leitura e atualização de usuários.
     
 -   Associação de permissões aos usuários.
     

@@ -1,8 +1,9 @@
 package com.desafio.crud_usuarios.core.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 @Table(name = "permissions")
@@ -15,14 +16,9 @@ public class Permission {
     @Column(nullable = false, unique = true)
     private String name;
 
-    @OneToMany(mappedBy = "permission", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<User> users;
-
-    public Permission() {}
-
-    public Permission(String name) {
-        this.name = name;
-    }
+    @JsonIgnore
+    @OneToMany(mappedBy = "permission", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<User> users;
 
     public Long getId() {
         return id;
@@ -40,11 +36,11 @@ public class Permission {
         this.name = name;
     }
 
-    public Set<User> getUsers() {
+    public List<User> getUsers() {
         return users;
     }
 
-    public void setUsers(Set<User> users) {
+    public void setUsers(List<User> users) {
         this.users = users;
     }
 }
